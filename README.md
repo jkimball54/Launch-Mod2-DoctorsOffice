@@ -61,52 +61,52 @@ SELECT flight_number
 FROM flights
 WHERE on_time = false;
 ```
-3. The count of delayed flights.
+2. The count of delayed flights.
 ```SQL
 SELECT COUNT(id) AS "Delayed_Flights"
 FROM flights
 WHERE on_time = false;
 ```
-5. The sum of prices for all flights arriving to Raleigh-Durham (`RDU`).
+3. The sum of prices for all flights arriving to Raleigh-Durham (`RDU`).
 ```SQL
 SELECT SUM(price) AS "totalPrice_raleighFlights"
 FROM flights
 WHERE arrive_city = 'RDU';
 ```
-7. The average price for all flights in the database.
+4. The average price for all flights in the database.
 ```SQL
 SELECT ROUND(AVG(price),2) AS "avg_price"
 FROM flights;
 ```
-9. The average price for all flights arriving to Raleigh-Durham.
+5. The average price for all flights arriving to Raleigh-Durham.
 ```SQL
 SELECT ROUND(AVG(price),2) AS "avg_price"
 FROM flights
 WHERE arrive_city = 'RDU';
 ```
-11. The departure city and number of flights departing from each city.
+6. The departure city and number of flights departing from each city.
 ```SQL
 SELECT depart_city, COUNT(id) AS "num_departures"
 FROM flights
 GROUP BY depart_city;
 ```
-13. The count of airlines in the database.
+7. The count of airlines in the database.
 ```SQL
 SELECT COUNT(id) AS "num_airlines"
 FROM airlines;
 ```
-15. The count of flights in the database.
+8. The count of flights in the database.
 ```SQL
 SELECT COUNT(id) AS "num_flights"
 FROM flights;
 ```
-17. The flight number, departure city, arrival city, price, and airline name of each flight. Do not return the airline ID number.
+9. The flight number, departure city, arrival city, price, and airline name of each flight. Do not return the airline ID number.
 ```SQL
 SELECT flight_number, depart_city, arrive_city, price, airlines.airline_name
 FROM flights JOIN airlines
 ON flights.airline_id = airlines.id;
 ```
-19. The airline name, flight number, and price of each flight on the Delta airline. (Assume that you do not know the ID number of the Delta airline. In a larger database, you would be expected to memorize ID numbers).
+10. The airline name, flight number, and price of each flight on the Delta airline. (Assume that you do not know the ID number of the Delta airline. In a larger database, you would be expected to memorize ID numbers).
 ```SQL
 SELECT airlines.airline_name, flights.flight_number, flights.price
 FROM airlines JOIN flights
