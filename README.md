@@ -33,13 +33,16 @@
         ```
 <br>
 
-2. What does a join table do? Why would we need one? A join table allows multiple tables information to be displayed based on relevant information between the two. You would need one when you need to combine two different tables into one single table.
-3. What is a question that the following query helps answer?
-Count the number of artists from each hometown.
-Example return might be 
-Loveland - 30
-Fort Collins - 7
-Denver - 142
+2. What does a join table do? Why would we need one? 
+    
+    >A join table allows multiple tables information to be displayed based on relevant information between the two. You would need one when you need to combine two different tables into one single table.
+4. What is a question that the following query helps answer?
+
+>Count the number of artists from each hometown.
+>Example return might be 
+>Loveland - 30
+>Fort Collins - 7
+>Denver - 142
 ```SQL
 SELECT hometown, COUNT(name) FROM artists
 GROUP BY hometown;
