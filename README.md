@@ -16,7 +16,7 @@
     1. What are the foreign keys in this diagram? test.DoctorDSS, test.PatientSS, Patient.DoctorDSS
     1. What is the primary key for the Tests table. ID
     1. What query would return the number of doctors who have a specialization in "pediatrics"? 
-        SELECT COUNT(DSS) 
+        \nSELECT COUNT(DSS) 
         FROM Doctor 
         Where Specialization = 'pediatrics';
 
