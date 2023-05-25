@@ -36,8 +36,11 @@ GROUP BY hometown;
 ```
 
 4. I'm trying to write a query to find the average age of all patients, but it's not working. How would you modify this query to get it to work as expected?
+```SQL
+--My Answer
 SELECT AVERAGE(age) AS "avg_patient_age"
 FROM patients;
+```
 ```SQL
 SELECT age FROM AVERAGE(patients);
 ```
