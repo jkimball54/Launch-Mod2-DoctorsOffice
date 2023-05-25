@@ -16,10 +16,11 @@
     1. What are the foreign keys in this diagram? test.DoctorDSS, test.PatientSS, Patient.DoctorDSS
     1. What is the primary key for the Tests table. ID
     1. What query would return the number of doctors who have a specialization in "pediatrics"? 
-        \nSELECT COUNT(DSS) 
+        ```SQL
+        SELECT COUNT(DSS) 
         FROM Doctor 
         Where Specialization = 'pediatrics';
-
+        ```
 <br>
 
 2. What does a join table do? Why would we need one? A join table allows multiple tables information to be displayed based on relevant information between the two. You would need one when you need to combine two different tables into one single table.
