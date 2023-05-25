@@ -40,8 +40,11 @@
 
 >Count the number of artists from each hometown.
 >Example return might be 
+
 >Loveland - 30
+
 >Fort Collins - 7
+
 >Denver - 142
 ```SQL
 SELECT hometown, COUNT(name) FROM artists
