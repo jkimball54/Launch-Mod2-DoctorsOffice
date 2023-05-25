@@ -61,7 +61,8 @@ FROM patients;
 SELECT age FROM AVERAGE(patients);
 ```
 5. How would you describe the difference between a `LEFT JOIN` and an `INNER JOIN`
- An inner join will only show data where both tables have that common data. A left join will show all data of the table to the left of the join and show just the data from the right table where it has common data.
+ 
+ >An inner join will only show data where both tables have that common data. A left join will show all data of the table to the left of the join and show just the data from the right table where it has common data.
 ## Exercise (10 Points Possible)
 
 Follow these steps to setup the assessment:
