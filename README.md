@@ -13,7 +13,7 @@
     1. How many patients can each doctor have? any number, one to many relationship between doctor to patients, so one doctor's dss can be linked to multiple patients
     1. How many doctors can each patient have? 1
     1. How would you describe the relationship between patients and tests? Be sure to use either one-to-one, one-to-many, or many-to-many in your answer. One-To-Many, There can be multiple tests linked to a single patient.
-    1. What are the foreign keys in this diagram? 3
+    1. What are the foreign keys in this diagram? test.DoctorDSS, test.PatientSS, Patient.DoctorDSS
     1. What is the primary key for the Tests table. ID
     1. What query would return the number of doctors who have a specialization in "pediatrics"? 
         SELECT COUNT(DSS) 
