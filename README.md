@@ -11,7 +11,8 @@
 [Citation for ERD](https://circle.visual-paradigm.com/hospital/)
 1. Use the Doctors Office ERD above to answer the following questions:
     1. How many patients can each doctor have? 
-          any number, one to many relationship between doctor to patients, so one doctor's dss can be linked to multiple patients
+         
+       >any number, one to many relationship between doctor to patients, so one doctor's dss can be linked to multiple patients
     3. How many doctors can each patient have? 1
     4. How would you describe the relationship between patients and tests? Be sure to use either one-to-one, one-to-many, or many-to-many in your answer. One-To-Many, There can be multiple tests linked to a single patient.
     5. What are the foreign keys in this diagram? test.DoctorDSS, test.PatientSS, Patient.DoctorDSS
